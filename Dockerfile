@@ -6,7 +6,7 @@ COPY ./index.html /usr/share/nginx/html/index.html
 COPY ./style.css /usr/share/nginx/html/style.css
 
 # Expose the port that Nginx will use
-EXPOSE 8081
+EXPOSE 80
 
 # Start the Nginx service
 CMD ["nginx", "-g", "daemon off;"]
